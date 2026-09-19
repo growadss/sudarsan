@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Trade with Sudarshan — Telegram Channel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1996958554347794');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1996958554347794&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+  :root{
+    --bg: #0B1210;
+    --bg-panel: #101A17;
+    --ink: #EDEAE1;
+    --ink-dim: #9BA79E;
+    --line: rgba(237,234,225,0.14);
+    --green: #35C48A;
+    --green-dim: #1E5F45;
+    --green-glow: rgba(53,196,138,0.35);
+    --amber: #E0A93C;
+    --red: #D9695C;
+    --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+    --font-body: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+  }
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+  }
+  :root[data-theme="light"]{
+    --bg: #F3F1EA;
+    --bg-panel: #FFFFFF;
+    --ink: #14201B;
+    --ink-dim: #5B665F;
+    --line: rgba(20,32,27,0.14);
+    --green: #1E8A5F;
+    --green-dim: #CFEDDD;
+    --green-glow: rgba(30,138,95,0.22);
+    --amber: #A9781E;
+    --red: #B3453A;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg: #F3F1EA;
+      --bg-panel: #FFFFFF;
+      --ink: #14201B;
+      --ink-dim: #5B665F;
+      --line: rgba(20,32,27,0.14);
+      --green: #1E8A5F;
+      --green-dim: #CFEDDD;
+      --green-glow: rgba(30,138,95,0.22);
+      --amber: #A9781E;
+      --red: #B3453A;
+    }
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+    padding-bottom:78px;
+  }
+  img{max-width:100%;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
+
+  .ticker{
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+    white-space:nowrap;
+    background:var(--bg-panel);
+  }
+  .ticker-track{
+    display:inline-block;
+    padding:9px 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.02em;
+    color:var(--ink-dim);
+    animation: scroll 32s linear infinite;
+  }
+  .ticker-track span{padding:0 16px; border-right:1px solid var(--line);}
+  .ticker-track .up{color:var(--green);}
+  .ticker-track .down{color:var(--red);}
+  @keyframes scroll{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker-track{animation:none;}
+  }
+
+  header{
+    padding:16px 0;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:10px;
+  }
+  .mark{display:flex; align-items:center; gap:10px; min-width:0;}
+  .mark-badge{
+    width:34px; height:34px; border-radius:3px;
+    background:var(--green);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono); font-weight:700; font-size:13px;
+    color:#08130F; flex-shrink:0;
+  }
+  .mark-name{font-family:var(--font-mono); font-size:13.5px; letter-spacing:0.01em; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .mark-name b{font-weight:700;}
+  header .stat{font-family:var(--font-mono); font-size:12px; color:var(--ink-dim); flex-shrink:0;}
+
+  .hero{padding:44px 0 36px; border-bottom:1px solid var(--line);}
+  .eyebrow{
+    font-family:var(--font-mono); font-size:12.5px; color:var(--green);
+    margin-bottom:16px;
+  }
+  h1{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(30px, 7vw, 48px);
+    line-height:1.14;
+    margin:0 0 16px;
+    max-width:15ch;
+  }
+  .sub{
+    font-size:16.5px;
+    color:var(--ink-dim);
+    max-width:46ch;
+    margin:0 0 28px;
+  }
+  .cta-btn{
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    background:var(--green);
+    color:#08130F;
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:16px;
+    padding:16px 26px;
+    border-radius:6px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    width:100%;
+  }
+  .cta-btn:active{transform:scale(0.99);}
+  .cta-btn:focus-visible{outline:3px solid var(--amber); outline-offset:3px;}
+  .cta-note{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    color:var(--ink-dim);
+    margin-top:12px;
+    text-align:center;
+  }
+
+  .qualifier{
+    margin-top:8px;
+    border:1.5px solid var(--green);
+    border-radius:10px;
+    padding:22px 20px 20px;
+    background:var(--bg-panel);
+    box-shadow:0 0 0 5px var(--green-glow);
+  }
+  .qualifier-label{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:4px;
+  }
+  .qualifier-sub{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--green);
+    margin-bottom:16px;
+  }
+  .qopts{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .qopt{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:14.5px;
+    padding:16px 10px;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    background:var(--bg);
+    color:var(--ink);
+    cursor:pointer;
+    text-align:center;
+    line-height:1.3;
+    transition:border-color .15s ease, background .15s ease, transform .1s ease;
+  }
+  .qopt .qicon{display:block; font-size:22px; margin-bottom:6px;}
+  .qopt:hover{border-color:var(--green);}
+  .qopt:active{transform:scale(0.97);}
+  .qopt[aria-pressed="true"]{
+    background:var(--green-dim);
+    border-color:var(--green);
+    color:var(--ink);
+  }
+  .qresult{
+    margin-top:18px;
+    padding-top:18px;
+    border-top:1px dashed var(--line);
+    display:none;
+  }
+  .qresult.show{
+    display:block;
+    animation:reveal .25s ease;
+  }
+  @keyframes reveal{
+    from{opacity:0; transform:translateY(4px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .qresult p{margin:0 0 14px; font-size:14.5px; color:var(--ink-dim);}
+  @media (prefers-reduced-motion: reduce){
+    .qresult.show{animation:none;}
+  }
+
+  section{padding:40px 0; border-bottom:1px solid var(--line);}
+  .section-head{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--ink-dim);
+    margin-bottom:20px;
+  }
+  .row{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:14px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+  }
+  .row:last-child{border-bottom:none;}
+  .row:first-of-type{border-top:none;}
+  .row-sym{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--green);
+    padding-top:2px;
+  }
+  .row h3{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:16px;
+    margin:0 0 6px;
+  }
+  .row p{margin:0; color:var(--ink-dim); font-size:14px;}
+
+  .split{display:grid; grid-template-columns:1fr; gap:0;}
+  @media(min-width:600px){.split{grid-template-columns:1fr 1fr;}}
+  .split-col{padding:18px 0;}
+  .split-col:first-child{border-bottom:1px solid var(--line);}
+  @media(min-width:600px){
+    .split-col:first-child{border-bottom:none; border-right:1px solid var(--line); padding-right:24px;}
+    .split-col:last-child{padding-left:24px;}
+  }
+  .split-title{font-family:var(--font-mono); font-size:12.5px; margin-bottom:12px;}
+  .split-col:first-child .split-title{color:var(--green);}
+  .split-col:last-child .split-title{color:var(--red);}
+  .split ul{margin:0; padding:0; list-style:none;}
+  .split li{
+    font-size:14px; color:var(--ink-dim);
+    padding:9px 0; border-top:1px solid var(--line);
+  }
+  .split li:first-child{border-top:none;}
+
+  .final{
+    padding:44px 0 32px;
+    text-align:left;
+  }
+  .final h2{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(24px, 5vw, 32px);
+    margin:0 0 12px;
+    max-width:16ch;
+  }
+  .final .sub{margin-bottom:22px;}
+
+  footer{padding:24px 0 40px;}
+  .disclaimer{
+    font-family:var(--font-mono);
+    font-size:11px;
+    line-height:1.7;
+    color:var(--ink-dim);
+    border-top:1px solid var(--line);
+    padding-top:18px;
+  }
+  .disclaimer b{color:var(--ink);}
+
+  .sticky-cta{
+    display:none;
+    position:fixed;
+    left:0; right:0; bottom:0;
+    z-index:40;
+    background:var(--bg-panel);
+    border-top:1px solid var(--line);
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  }
+  .sticky-cta .cta-btn{padding:13px 20px; font-size:15px;}
+  @media (max-width:640px){
+    .sticky-cta{display:block;}
+  }
+
+  @media (min-width:601px){
+    .qopts{grid-template-columns:repeat(4,1fr);}
+  }
+</style>
+</head>
+<body>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="up">NIFTY 50 ▲ 24,812</span>
+      <span class="down">BANKNIFTY ▼ 51,204</span>
+      <span class="up">SENSEX ▲ 81,040</span>
+      <span>USDINR 83.21</span>
+      <span class="up">NIFTY 50 ▲ 24,812</span>
+      <span class="down">BANKNIFTY ▼ 51,204</span>
+      <span class="up">SENSEX ▲ 81,040</span>
+      <span>USDINR 83.21</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <div class="mark">
+        <div class="mark-badge">TS</div>
+        <div class="mark-name">Trade with <b>Sudarshan</b></div>
+      </div>
+      <div class="stat">Telegram · Free</div>
+    </header>
+
+    <section class="hero" style="border-bottom:none; padding-top:4px;">
+      <div class="eyebrow">Daily Market Updates · Trade Setups · Free Learning</div>
+      <h1>Market ni ardham chesukondi, guess cheyakandi.</h1>
+      <p class="sub">Prathi roju, market open avvaka mundu levels, sector trends mariyu trade ideas — simple bhashalo, jargon lekunda. "Sure-shot tips" kaadu, kevalam understanding mariyu discipline.</p>
+
+      <div class="qualifier">
+        <div class="qualifier-label">👇 Meeru ela trade chestunnaru?</div>
+        <div class="qualifier-sub">Tap cheyandi — 10 seconds lo meeku correct content chupistamu</div>
+        <div class="qopts" role="group" aria-label="Trading style">
+          <button class="qopt" type="button" data-val="Intraday"><span class="qicon">⚡</span>Intraday</button>
+          <button class="qopt" type="button" data-val="Swing"><span class="qicon">📈</span>Swing / Positional</button>
+          <button class="qopt" type="button" data-val="Investing"><span class="qicon">🏦</span>Long-term Investing</button>
+          <button class="qopt" type="button" data-val="Beginner"><span class="qicon">🌱</span>Ippudu Nerchukuntunna</button>
+        </div>
+        <div class="qresult" id="qresult">
+          <p id="qresult-text"></p>
+          <a class="cta-btn js-tg-cta" href="https://t.me/+Skof143xlBMzNDc1" target="_blank" rel="noopener">Free Telegram Channel Join Cheyandi</a>
+          <div class="cta-note">Channel completely free · 40,000+ members · Eppudaina leave cheyochu</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">Channel lo em untundi</div>
+      <div class="row">
+        <div class="row-sym">01</div>
+        <div><h3>Pre-market brief</h3><p>Market open avvaka mundu key levels, gap-up/gap-down reasoning mariyu roju focus.</p></div>
+      </div>
+      <div class="row">
+        <div class="row-sym">02</div>
+        <div><h3>Reasoning tho trade setups</h3><p>Kevalam entry-exit kaadu — enduku teeskuntunnamo, risk enti, invalidation level enti, anni raasi untayi.</p></div>
+      </div>
+      <div class="row">
+        <div class="row-sym">03</div>
+        <div><h3>Weekly recap</h3><p>Ye trades work ayyayo, ye avvaledo — honest review, meeru swayanga nerchukovadaniki.</p></div>
+      </div>
+      <div class="row">
+        <div class="row-sym">04</div>
+        <div><h3>Beginners kosam explainers</h3><p>Chart patterns, risk management, position sizing — jargon lekunda, real examples tho.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">Idi evariki, evariki kaadu</div>
+      <div class="split">
+        <div class="split-col">
+          <div class="split-title">Idi mee kosam, ఒకవేళ ↓</div>
+          <ul>
+            <li>Meeru mee trades meere teesukovadam nerchukovalani anukuntunnaru</li>
+            <li>Meeku reasoning mariyu risk tho kudina setups kavali</li>
+            <li>Meeku simple, jargon-free updates istam</li>
+          </ul>
+        </div>
+        <div class="split-col">
+          <div class="split-title">Idi mee kosam kaadu, ఒకవేళ ↓</div>
+          <ul>
+            <li>Meeru "guaranteed profit" leda "sure-shot tips" vetukutunnaru</li>
+            <li>Meeru artham chesukokunda blind ga calls follow cheyalani anukuntunnaru</li>
+            <li>Meeru trading ni lottery la chustunnaru</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" style="border-bottom:none;">
+      <h2>Free ga undi. Hidden cost em ledu.</h2>
+      <p class="sub">Join cheyandi, content chudandi, nachina daanini follow cheyandi. Eppudaina leave cheyochu, e obligation ledu.</p>
+      <a class="cta-btn js-tg-cta" href="https://t.me/+Skof143xlBMzNDc1" target="_blank" rel="noopener">Free Telegram Channel Join Cheyandi</a>
+    </section>
+
+    <footer>
+      <div class="disclaimer">
+        <b>Risk disclosure:</b> Stock market investments/trading are subject to market risk. Past performance is not indicative of future results. Content shared on this channel is for educational purposes only and should not be construed as investment advice or a recommendation to buy/sell any security. Please consult a SEBI-registered investment advisor before making any financial decisions. Trade with Sudarshan is not a SEBI-registered entity and does not guarantee any returns.
+      </div>
+    </footer>
+  </div>
+
+  <div class="sticky-cta">
+    <a class="cta-btn js-tg-cta" href="https://t.me/+Skof143xlBMzNDc1" target="_blank" rel="noopener">Free Telegram Channel Join Cheyandi</a>
+  </div>
+
+<script>
+  var opts = document.querySelectorAll('.qopt');
+  var resultBox = document.getElementById('qresult');
+  var resultText = document.getElementById('qresult-text');
+  var messages = {
+    'Intraday': 'Intraday traders kosam prathi roju pre-market levels mariyu intraday setups useful ga untayi.',
+    'Swing': 'Swing/positional traders kosam weekly trend analysis mariyu multi-day setups share chestamu.',
+    'Investing': 'Long-term investors kosam sector trends mariyu fundamentally strong ideas meeda focus untundi.',
+    'Beginner': 'Beginners kosam separate ga simple explainers mariyu risk-management basics cover chestamu.'
+  };
+  opts.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      opts.forEach(function(o){ o.setAttribute('aria-pressed','false'); });
+      btn.setAttribute('aria-pressed','true');
+      resultText.textContent = messages[btn.getAttribute('data-val')];
+      resultBox.classList.add('show');
+      resultBox.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+  });
+
+  // Meta Pixel — fire Subscribe on every Telegram CTA click
+  document.querySelectorAll('.js-tg-cta').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (typeof fbq === 'function') {
+        fbq('track', 'Subscribe');
+      }
+    });
+  });
+</script>
+</body>
+</html>
